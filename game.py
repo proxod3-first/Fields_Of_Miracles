@@ -21,6 +21,8 @@ def play_game():
     guessed_letters = []
     tries = 0
 
+    print("Welcome to the game 'Field of Wonders'!")
+    print("The word contains", len(word), "letters.")
     print(display_word(word, guessed_letters))
 
     while True:
