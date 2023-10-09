@@ -21,8 +21,8 @@ def play_game():
     guessed_letters = []
     tries = 0
 
-    print("Welcome to the game 'Field of Wonders'!")
-    print("The word contains", len(word), "letters.")
+    print("Welcome to the game 'Field of Wonders'!\n")
+    print("The word contains", len(word), "letters.\n")
     print(display_word(word, guessed_letters))
 
     while True:
@@ -32,24 +32,24 @@ def play_game():
             continue
 
         if guess in guessed_letters:
-            print("You already guessed this letter. Try again.")
+            print("You already guessed this letter. Try again.\n")
             continue
 
         guessed_letters.append(guess)
         tries += 1
 
         if guess not in word:
-            print("The letter is not in the word.")
+            print("The letter is not in the word.\n")
         else:
-            print("Correct guess!")
+            print("Correct guess!\n")
             
         displayed_word = display_word(word, guessed_letters)
         print(displayed_word)
 
         if "_" not in displayed_word:
-            print("Congratulations! You guessed the word in", tries, "tries.")
+            print("Congratulations! You guessed the word in", tries, "tries.\n")
             break
-    print("Thanks for playing!")
+    print("Thanks for playing!\n")
     return tries
 
 
