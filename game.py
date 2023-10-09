@@ -28,9 +28,11 @@ def play_game():
     while True:
         guess = input("Enter a letter: ").lower()
         if len(guess) != 1:
+            print("Please enter only one letter.")
             continue
 
         if guess in guessed_letters:
+            print("You already guessed this letter. Try again.")
             continue
 
         guessed_letters.append(guess)
