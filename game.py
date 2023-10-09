@@ -38,6 +38,11 @@ def play_game():
         guessed_letters.append(guess)
         tries += 1
 
+        if guess not in word:
+            print("The letter is not in the word.")
+        else:
+            print("Correct guess!")
+            
         displayed_word = display_word(word, guessed_letters)
         print(displayed_word)
 
