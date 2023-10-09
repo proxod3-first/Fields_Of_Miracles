@@ -1,5 +1,5 @@
 import unittest
-from game import display_word
+from game import choose_word, display_word
 
 
 class TestGameFunctions(unittest.TestCase):
@@ -7,6 +7,11 @@ class TestGameFunctions(unittest.TestCase):
         words = ["apple", "banana", "cherry", "date", "wildberry"]
         chosen_word = choose_word()
         self.assertIn(chosen_word, words)
+        
+    def test_choose_word2(self):
+        words = ["app"]
+        chosen_word = choose_word()
+        self.assertNotIn(chosen_word, words)
         
     def test_display_word(self):
         word = "apple"
