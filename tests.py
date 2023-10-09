@@ -18,6 +18,16 @@ class TestGameFunctions(unittest.TestCase):
         guessed_letters = ["a", "p"]
         displayed_word = display_word(word, guessed_letters)
         self.assertEqual(displayed_word, "app__")
+    
+    def test_display_word2(self):
+        word = "cherry"
+        guessed_letters = ["c", "h"]
+        displayed_word = display_word(word, guessed_letters)
+        self.assertEqual(displayed_word, "ch____")
+
+    def test_play_game(self):
+        # Test the game logic
+        pass
 
 
 if __name__ == '__main__':
