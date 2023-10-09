@@ -3,6 +3,11 @@ from game import display_word
 
 
 class TestGameFunctions(unittest.TestCase):
+    def test_choose_word(self):
+        words = ["apple", "banana", "cherry", "date", "wildberry"]
+        chosen_word = choose_word()
+        self.assertIn(chosen_word, words)
+        
     def test_display_word(self):
         word = "apple"
         guessed_letters = ["a", "p"]
