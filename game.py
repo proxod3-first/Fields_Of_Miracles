@@ -51,3 +51,6 @@ def play_game():
             break
     print("Thanks for playing!")
     return tries
+
+
+play_game()
