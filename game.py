@@ -49,4 +49,5 @@ def play_game():
         if "_" not in displayed_word:
             print("Congratulations! You guessed the word in", tries, "tries.")
             break
-            
+    print("Thanks for playing!")
+    return tries
