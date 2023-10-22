@@ -4,7 +4,7 @@ from game import choose_word, display_word
 
 class TestGameFunctions(unittest.TestCase):
     def test_choose_word(self):
-        words = ["apple", "banana", "cherry", "date", "wildberry"]
+        words = ["apple", "banana", "cherry", "date", "elderberry"]
         chosen_word = choose_word()
         self.assertIn(chosen_word, words)
         
